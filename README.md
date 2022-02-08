@@ -4,7 +4,7 @@ CrackMetrics is an evaluation metrics library for crack detection methods.
 CrackMetrics includes: Threshold independent metrics ( OIS[1], ODS[1], AIU[2], sOIS[3], sODS[3] and avrF[*])
 and Threshold dependent metrics ( IoU and F-measure).
 
-[^*]: avrF is a new metric calculated in the same way as AIU, however using F-measure instead of IoU.
+[*]: avrF is a new metric calculated in the same way as AIU, however using F-measure instead of IoU.
 
 In OIS and ODS, annotation bias is dealt with by computing the correspondence between detected and ground truth pixels. 
 The parameter dmax represents maximum tolerance for the correct match and has the default 0.0075 value.
