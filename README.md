@@ -33,6 +33,9 @@ MATLAB is required.
 
 One can also compile the library from the source code, please see https://github.com/pdollar/edges for details
 
+4. Open crack_gui.mlapp from Matlab
+
+...To be continued...
 
 # References
 
