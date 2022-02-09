@@ -13,17 +13,32 @@ However, to make the metrics robust to the transition between the crack pixels a
 
 CrackMetrics is a work in progress. Let us know of any issues, and feel free to contribute.
 
-[1] D. Martin, C. Fowlkes, and J. Malik, “Learning to Detect Natural Image Boundaries Using Local Brightness, Color, and Texture Cues”, IEEE Transactions on Pattern Analysis and Machine Intelligence, Vol. 26, No. 1, 2004.
-
-[2] F. Yang, L. Zhang, S. Yu, D. Prokhorov, X. Mei, and H. Ling, “Feature Pyramid and Hierarchical Boosting Network for Pavement Crack Detection” IEEE Trans. Intell. Transp., vol. 21, no. 4, 2020.
-
-[3] V.Polovnikov, D. Alekseev, I. Vinogradov, and G. Lashkia, “DAUNet: Deep Augmented Neural Network for Pavement Crack Segmentation”, IEEE Access, Vol.9, 2021.
 
 # Requirements
 MATLAB is required.
 
 # Getting Started
 
-TBD
+1. Download or clone this repository
 
+2. add folder $REPO/matlab to Matlab's path
+
+3. Download correspondPixels library for your system
+
+[Windows® (64-bit)](https://github.com/pdollar/edges/blob/master/private/correspondPixels.mexw64)
+
+[Linux® (64-bit)](https://github.com/pdollar/edges/blob/master/private/correspondPixels.mexa64)
+
+[Apple Mac (64-bit)](https://github.com/pdollar/edges/blob/master/private/correspondPixels.mexmaci64)
+
+One can also compile the library from the source code, please see https://github.com/pdollar/edges for details
+
+
+# References
+
+[1] D. Martin, C. Fowlkes, and J. Malik, “Learning to Detect Natural Image Boundaries Using Local Brightness, Color, and Texture Cues”, IEEE Transactions on Pattern Analysis and Machine Intelligence, Vol. 26, No. 1, 2004.
+
+[2] F. Yang, L. Zhang, S. Yu, D. Prokhorov, X. Mei, and H. Ling, “Feature Pyramid and Hierarchical Boosting Network for Pavement Crack Detection” IEEE Trans. Intell. Transp., vol. 21, no. 4, 2020.
+
+[3] V.Polovnikov, D. Alekseev, I. Vinogradov, and G. Lashkia, “DAUNet: Deep Augmented Neural Network for Pavement Crack Segmentation”, IEEE Access, Vol.9, 2021.
 
