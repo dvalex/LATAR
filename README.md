@@ -37,6 +37,8 @@ One can also compile the library from the source code, please see https://github
 
 ![GUI.png](./GUI.PNG?raw=true "Main window")
 
+5. Select directories with detections and ground truth images. For testing purpose one can use [toy dataset](./data/toy_dataset.zip)
+
 # References
 
 [1] D. Martin, C. Fowlkes, and J. Malik, “Learning to Detect Natural Image Boundaries Using Local Brightness, Color, and Texture Cues”, IEEE Transactions on Pattern Analysis and Machine Intelligence, Vol. 26, No. 1, 2004.
