@@ -21,9 +21,9 @@ MATLAB is required.
 
 1. Download or clone this repository
 
-2. add folder $REPO/matlab to Matlab's path
+2. Add folder $REPO/matlab to Matlab's path
 
-3. Download correspondPixels library for your system
+3. Download correspondPixels library for your system:
 
 [Windows® (64-bit)](https://github.com/pdollar/edges/blob/master/private/correspondPixels.mexw64)
 
@@ -31,13 +31,19 @@ MATLAB is required.
 
 [Apple Mac (64-bit)](https://github.com/pdollar/edges/blob/master/private/correspondPixels.mexmaci64)
 
-One can also compile the library from the source code, please see https://github.com/pdollar/edges for details
+One can also compile the library from the source code, see https://github.com/pdollar/edges for details
 
-4. Open crack_gui.mlapp from Matlab
+4. Open crack_gui.mlapp from Matlab:
 
 ![GUI.png](./GUI.PNG?raw=true "Main window")
 
 5. Select directories with detections and ground truth images. For testing purpose one can use [toy dataset](./data/toy_dataset.zip)
+
+6. There are 3 metrics sections: Threshold independent, Threshold independent with own tolerance, Threshold dependet.
+Pressing "Compute" button starts computation of the respective metrics. 
+
+Note: it may take a long time, especially with ODS/OIS computation.
+
 
 # References
 
