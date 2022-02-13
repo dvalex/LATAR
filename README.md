@@ -35,7 +35,7 @@ One can also compile the library from the source code, please see https://github
 
 4. Open crack_gui.mlapp from Matlab
 
-![GUI.png](GUI.png?raw=true "Main window")
+![GUI.png](./GUI.PNG?raw=true "Main window")
 
 # References
 
