@@ -42,8 +42,8 @@ One can also compile the library from the source code, see https://github.com/pd
 6. There are 3 metrics sections: Threshold independent, Threshold independent with own tolerance, Threshold dependet.
 Pressing "Compute" button starts computation of the respective metrics. 
 
-*Note:* Depending on the amount of data it may take a long time to calculate.
-ODS/OIS are the most time consuming (polynomial time complexity).
+*Note: Depending on the amount of data it may take a long time to calculate.
+ODS/OIS are the most time consuming (polynomial time complexity).*
 
 
 # References
