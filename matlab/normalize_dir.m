@@ -1,6 +1,6 @@
 function normalize_dir(DIR_INOUT )
 if nargin == 0 
-    DIR_INOUT = 'D:\Vaxtang\CrackDetection\pavement-crack-detection\eval_tool\GUI\test_dataset\predicted';
+    DIR_INOUT = '.\toy_dataset\predicted';
 end
 %Imin = 0;Imax = 255;
 if isempty(DIR_INOUT), return ; end

@@ -1,7 +1,7 @@
 function [ODS, OIS] = ODS_OIS(resDir, gtDir, runStage1)
 if nargin == 0 % DEBUG
-    resDir = 'D:\Vaxtang\CrackDetection\pavement-crack-detection\eval_tool\GUI\toy_dataset\det';
-    gtDir =  'D:\Vaxtang\CrackDetection\pavement-crack-detection\eval_tool\GUI\toy_dataset\gt';
+    resDir = '.\toy_dataset\det';
+    gtDir =  '.\toy_dataset\gt';
     runStage1 = true;
 end
 if runStage1

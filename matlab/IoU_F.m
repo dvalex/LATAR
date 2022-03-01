@@ -4,8 +4,8 @@ function [IoU, dice, F] = IoU_F(gt_dir, det_dir, threshold, tol2px)
 % TODO: 1) compute precision/recall, F-measure
 % TODO: 2) Use 2px tolerance if need
 if nargin == 0 % DEBUG
-    det_dir = 'D:\Vaxtang\CrackDetection\pavement-crack-detection\eval_tool\GUI\toy_dataset\det';
-    gt_dir =  'D:\Vaxtang\CrackDetection\pavement-crack-detection\eval_tool\GUI\toy_dataset\gt';
+    det_dir = '.\toy_dataset\det';
+    gt_dir =  '.\toy_dataset\gt';
     threshold = 0.5;
     tol2px=true;
 end

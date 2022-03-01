@@ -1,8 +1,8 @@
 function aiu = AIU_GUI(det_dir, gt_dir)
 %fprintf('%s %s\n', DS, NET);
 if nargin == 0 % DEBUG
-    det_dir= 'D:\Vaxtang\CrackDetection\pavement-crack-detection\eval_tool\GUI\toy_dataset\det';
-    gt_dir= 'D:\Vaxtang\CrackDetection\pavement-crack-detection\eval_tool\GUI\toy_dataset\gt';
+    det_dir= '.\toy_dataset\det';
+    gt_dir= '.\toy_dataset\gt';
 end
 get_pIUPR(det_dir, gt_dir);
 aiu = get_AIU(det_dir);

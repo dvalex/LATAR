@@ -1,9 +1,8 @@
 function [sODS, sOIS, AIU, AF, Fth, IoUth] = sODS_sOISnew(det_dir, gt_dir, run_stage1, use_2px_tol)
 if nargin == 0 % DEBUG
-    det_dir= 'D:\Vaxtang\CrackDetection\pavement-crack-detection\eval_tool\GUI\toy_dataset\det';
-    gt_dir= 'D:\Vaxtang\CrackDetection\pavement-crack-detection\eval_tool\GUI\toy_dataset\gt';
+    det_dir= '.\toy_dataset\det';
+    gt_dir= '.\toy_dataset\gt';
 end
-%% !TODO: compute AIU, AF as in Letter from Vaxtang!
 if nargin < 3, run_stage1 = true; end
 if nargin < 4, use_2px_tol= false; end
 SE = strel('disk',2,0);
