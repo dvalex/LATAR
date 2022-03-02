@@ -5,7 +5,8 @@ if nargin == 0 % DEBUG
 end
 if nargin < 3, run_stage1 = true; end
 if nargin < 4, use_2px_tol= false; end
-SE = strel('disk',2,0);
+
+
 % TODO: detect if run_stage1 is needed - maybe use files dates?
 assert(isfolder(det_dir) && isfolder(gt_dir));
 %det_dir = fullfile(BASE, DS, NN);
@@ -22,7 +23,10 @@ if run_stage1
     for i = 1:N
         gtname = gt_files(i).name;
         gtmask = get_mask(fullfile(gt_dir, gtname));
-        if use_2px_tol, gtmask_dilate = imdilate(gtmask, SE);  end
+        if use_2px_tol
+            SE = strel('disk',2,0);
+            gtmask_dilate = imdilate(gtmask, SE);  
+        end
             
         allGT = sum(gtmask(:))*ones(n_th, 1);
         predname = strrep(gtname, 'gt', 'pr');
@@ -32,7 +36,7 @@ if run_stage1
             predmask = get_mask(fullfile(det_dir, predname), thresholds(t));
             PRED(t) = sum(predmask(:));
             if use_2px_tol
-                matchmask = gtmask_dilate & predmask;
+		        matchmask = gtmask_dilate & predmask;
                 nonmatchmask  = gtmask & ~predmask;
                 fn = sum(nonmatchmask(:));
                 allGT(t) = fn +  sum(matchmask(:));
