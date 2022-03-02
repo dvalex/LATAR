@@ -23,7 +23,7 @@ MATLAB is required.
 
 2. Add folder $REPO/matlab to Matlab's path
 
-3. Download correspondPixels library for your system:
+3. Download correspondPixels library for your operating system:
 
 [Windows® (64-bit)](https://github.com/pdollar/edges/blob/master/private/correspondPixels.mexw64)
 
